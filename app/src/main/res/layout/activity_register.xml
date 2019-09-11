@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_picture"
+    tools:context=".Model.ZoomOutPageTransformer$LoginActivity">
+
+
+
+    <!--//////////////////Register Email////////////////////////-->
+    <EditText
+        android:id="@+id/register_email_ed"
+        android:layout_width="285dp"
+        android:layout_height="82dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="207dp"
+        android:backgroundTint="@android:color/black"
+        android:drawablePadding="10sp"
+        android:drawableStart="@mipmap/ic_login"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black" />
+    <!--/////////////////////////////////////////////////////////-->
+
+    <!--//////////////////Register Password////////////////////////-->
+    <EditText
+        android:id="@+id/register_password_ed"
+        android:layout_width="285dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/register_email_ed"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/black"
+        android:drawablePadding="10sp"
+        android:drawableStart="@mipmap/ic_password"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black" />
+    <!--/////////////////////////////////////////////////////////-->
+
+
+    <!--//////////////////Register Button////////////////////////-->
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_password_ed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:text="@string/register" />
+
+    <!--/////////////////////////////////////////////////////////-->
+
+    <!--//////////////////Spinner Progress Bar////////////////////////-->
+    <!--/////////////////////////////////////////////////////////-->
+
+</RelativeLayout>

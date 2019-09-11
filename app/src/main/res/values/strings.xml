@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Restaurants</string>
+
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+    <string name="create_account">Create An Account</string>
+    <string name="register">Register</string>
+
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+
+    <string name="open">Open</string>
+    <string name="close">>Close</string>
+
+
+    <!--Menu Items' titles-->
+    <string name="home">Home</string>
+    <string name="trips_Experiences">Restaurant recommendations</string>
+    <string name="equipment_sale">Equipment Sale</string>
+    <string name="articles">Articles</string>
+    <string name="vouchers">Vouchers</string>
+    <string name="saved">Saved</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="where_to">Where do you want to travel?</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="search">Search</string>
+
+    <string name="contact_us">Contact Us</string>
+    <string name="user_profile">User Profile</string>
+    <string name="recently_posted">Recently Posted</string>
+    <string name="popular_searches">Popular Searches</string>
+    <string name="privacy_policy">About us</string>
+    <string name="privacy_policy_text">
+    "In our app you can share recommendations of restaurants you've visited
+    If you are wondering where to eat?
+     The app is just for you!
+    </string>
+
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?><!-- This linear layout contains a single item displayed in the MainActivity -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorLightGray"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    android:paddingBottom="8dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="8dp"
+    tools:context="com.example.segev.restaurants.MainScreenActivity">
+
+    <!-- A priority circle that is colored in programmatically in the adapter code -->
+
+    <ImageView
+        android:id="@+id/post_layout_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/gradient"
+        android:scaleType="fitXY"
+        app:srcCompat="@android:drawable/ic_menu_report_image" />
+
+    <TextView
+        android:id="@+id/post_layout_title"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/post_layout_imageView"
+        android:layout_below="@+id/post_layout_imageView"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#5e7974"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/post_layout_user_email"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/post_layout_imageView"
+        android:layout_below="@+id/post_layout_title"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/post_layout_location"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/post_layout_imageView"
+        android:layout_below="@+id/post_layout_title" />
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Fragments.PostNewFragment">
+
+    <EditText
+        android:id="@+id/post_new_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:backgroundTint="@android:color/black"
+        android:ems="10"
+        android:hint="Location"
+        android:inputType="textPersonName"
+        android:textColorHint="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_new_title" />
+
+    <TextView
+        android:id="@+id/newHeadLine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="Add Post"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/post_new_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="8dp"
+        android:background="#ffe799"
+        android:text="SUBMIT"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_new_uploaded_imageView" />
+
+    <ImageView
+        android:id="@+id/post_new_uploaded_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="234dp"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/ic_menu_report_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_new_description" />
+
+    <EditText
+        android:id="@+id/post_new_title"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="@android:color/black"
+        android:ems="10"
+        android:hint="City's Name"
+        android:inputType="textPersonName"
+        android:textColorHint="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newHeadLine" />
+
+    <EditText
+        android:id="@+id/post_new_description"
+        android:layout_width="match_parent"
+        android:layout_height="134dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@android:color/black"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:textColorHint="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_new_location" />
+
+</android.support.constraint.ConstraintLayout>

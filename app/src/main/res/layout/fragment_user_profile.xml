@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.UserProfileFragment">
+
+
+    <TextView
+        android:id="@+id/user_profile_title"
+        android:layout_width="266dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="76dp"
+        android:gravity="center"
+        android:text="@string/user_profile"
+        android:textColor="@android:color/black"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/user_profile_name"
+        android:layout_width="269dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="336dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_profile_title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/user_profile_new_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="New Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/user_profile_submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_profile_current_password" />
+
+    <EditText
+        android:id="@+id/user_profile_current_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:hint="Current Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/user_profile_new_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_profile_name" />
+
+    <Button
+        android:id="@+id/user_profile_submit"
+        android:layout_width="177dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="76dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="50dp"
+        android:background="#FFFFFF"
+        android:text="CHANGE PASSWORD"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_profile_new_password" />
+
+    <Button
+        android:id="@+id/user_profile_new_password_show"
+        android:layout_width="26dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/ic_remove_red_eye_black_24dp"
+        app:layout_constraintStart_toEndOf="@+id/user_profile_current_password"
+        app:layout_constraintTop_toBottomOf="@+id/user_profile_name" />
+
+    <Button
+        android:id="@+id/user_profile_current_password_show"
+        android:layout_width="26dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/ic_remove_red_eye_black_24dp"
+        app:layout_constraintStart_toEndOf="@+id/user_profile_current_password"
+        app:layout_constraintTop_toBottomOf="@+id/user_profile_name" />
+
+</android.support.constraint.ConstraintLayout>

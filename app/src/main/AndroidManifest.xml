@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.segev.restaurants">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.example.restaurants.MyApplication"
+
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="Traveler"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--Login Activity-->
+        <activity android:name="com.example.restaurants.Model.ZoomOutPageTransformer$LoginActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--Login Activity-->
+
+        <!--Register Activity-->
+        <activity android:name="com.example.restaurants.RegisterActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <!--Register Activity-->
+
+        <!--Main Screen Activity-->
+        <activity android:name="com.example.restaurants.MainScreenActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--Main Screen Activity-->
+
+    </application>
+
+</manifest>
